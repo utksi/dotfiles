@@ -1,12 +1,8 @@
 require("obsidian").setup({
   workspaces = {
-    -- {
-    --   name = "OmerVault",
-    --   path = "/Users/omerhamerman/Obsidian/Omervault",
-    -- },
     {
       name = "Notes",
-      path = "/Users/utksi60/Obsidian/Notes",
+      path = "/Users/utksi60/obsidian/Notes",
     },
   },
   completion = {
