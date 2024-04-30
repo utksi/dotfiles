@@ -37,7 +37,6 @@ mongocli
 mosh
 ncdu
 neovim
-nikto
 nmap
 noahgorstein/tap/jqp
 openai-whisper
