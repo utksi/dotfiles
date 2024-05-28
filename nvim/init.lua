@@ -1,18 +1,44 @@
-require('keymaps')
-require('plugins.lazy')
-require('plugins.misc')
-require('plugins.lualine')
-require('options')
-require('misc')
-require('plugins.dap')
-require('plugins.gitsigns')
-require('plugins.tele')
-require('plugins.treesitter')
-require('plugins.lsp')
-require('plugins.trouble')
-require('plugins.obsidian')
-require('plugins.zenmode')
-require('plugins.neogit')
-require('plugins.codesnap')
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+	vim.fn.system({
+		"git",
+		"clone",
+		"--filter=blob:none",
+		"https://github.com/folke/lazy.nvim.git",
+		"--branch=stable", -- latest stable release
+		lazypath,
+	})
+end
+vim.opt.rtp:prepend(lazypath)
 
--- vim: ts=8 sts=2 sw=2 et
+require("config.keymaps")
+require("config.options")
+
+require("lazy").setup("plugins", {
+	install = {
+		missing = true,
+		colorscheme = { "gruvbox-material" },
+	},
+	checker = {
+		enabled = true,
+		notify = false,
+	},
+	change_detection = {
+		enabled = true,
+		notify = false,
+	},
+	ui = {
+		border = "rounded",
+	},
+	performance = {
+		rtp = {
+			disabled_plugins = {
+				"gzip",
+				"tarPlugin",
+				"tohtml",
+				"tutor",
+				"zipPlugin",
+			},
+		},
+	},
+})
