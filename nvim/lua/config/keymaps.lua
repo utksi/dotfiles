@@ -184,7 +184,7 @@ vim.g.floaterm_keymap_prev = "<F8>"
 vim.g.floaterm_keymap_next = "<F9>"
 
 -- Set keymap for toggling the floaterm
-vim.g.floaterm_keymap_toggle = "<leader>§"
+vim.g.floaterm_keymap_toggle = "<leader>`"
 
 -- Normal mode: Map <leader>git to open lazygit in a new floaterm
 vim.api.nvim_set_keymap("n", "<leader>git", "<cmd>:FloatermNew lazygit<CR>", { noremap = true, silent = true })
