@@ -16,6 +16,7 @@ alias vim='/opt/homebrew/bin/nvim'
 alias tetralith='ssh -X x_utksi@tetralith-el9.nsc.liu.se'
 alias sigma='ssh -X x_utksi@sigma.nsc.liu.se'
 alias dardel='ssh -X usingh@dardel.pdc.kth.se'
+alias alvis='ssh -X singhu@alvis1.c3se.chalmers.se'
 
 #compilers
 alias gcc='/opt/homebrew/bin/gcc-13'
