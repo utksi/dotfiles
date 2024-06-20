@@ -19,13 +19,13 @@ alias dardel='ssh -X usingh@dardel.pdc.kth.se'
 alias alvis='ssh -X singhu@alvis1.c3se.chalmers.se'
 
 #compilers
-alias gcc='/opt/homebrew/bin/gcc-13'
-alias g++='/opt/homebrew/bin/g++-13'
-alias gfortran='/opt/homebrew/bin/gfortran-13'
+alias gcc='/opt/homebrew/bin/gcc-14'
+alias g++='/opt/homebrew/bin/g++-14'
+alias gfortran='/opt/homebrew/bin/gfortran-14'
 
-alias cc='/opt/homebrew/bin/gcc-13'
-alias cxx='/opt/homebrew/bin/g++-13'
-alias fortran='/opt/homebrew/bin/gfortran-13'
+alias cc='/opt/homebrew/bin/gcc-14'
+alias cxx='/opt/homebrew/bin/g++-14'
+alias fortran='/opt/homebrew/bin/gfortran-14'
 
 # Some Git alias
 alias gg="git status"
